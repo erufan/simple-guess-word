@@ -50,7 +50,6 @@ const isWiner = (answer) => !answer.includes("-");
 const main = async () => {
   const word = getRandomWord(file).split("");
   const answer = new Array(word.length).fill("-");
-  console.log(word.join(""));
 
   while (true) {
     const guess = await askQuestion("guess a letter: ");
